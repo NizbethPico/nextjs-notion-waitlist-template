@@ -17,7 +17,7 @@ interface EmailProps {
 export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
   <Html>
     <Head />
-    <Preview>Thanks for Joining the Waitlist, {userFirstname}! 🎉</Preview>
+    <Preview>Gracias por unirte a la lista de espera, {userFirstname}! 🎉</Preview>
     <Body style={main}>
       <Container style={container}>
         <Img
@@ -29,34 +29,35 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
         />
         <Text style={greeting}>Hi {userFirstname},</Text>
         <Text style={paragraph}>
-          Thanks for joining the waitlist for our Next.js + Notion CMS waitlist
-          template! I'm Lakshay, the developer behind this project. I'm glad to
-          have you on board.
+          Gracias por unirse a la lista de espera de nuestra lista de espera de la pagina web
+          de ¡Ocean Blue!. Soy Zulimar, la desarrolladora detrás de este proyecto. Me alegro de
+          tenerte a bordo.
         </Text>
         <Text style={paragraph}>
-          I'll keep you posted on the progress and notify you as soon as it's
-          ready for you to use. In the meantime, if you have any questions or
-          feedback, don't hesitate to reach out by replying directly to{" "}
+          Te mantendré informado sobre el progreso y te notificaré tan pronto
+          como este listo para que lo uses. Mientras tanto, si tienes alguna
+          preguntas o comentarios, no dudes en comunicarte conmigo respondiendo 
+          directamente a{" "}
           <a href="mailto:lakshb.work@gmail.com" style={link}>
             this email {""}
           </a>
-          — I'm here to listen!
+          — ¡Estoy aquí para escuchar!
         </Text>
         <Text style={paragraph}>
-          You can also follow me on X/Twitter for updates:{" "}
+          También puedes seguirme en X/Twitter para recibir actualizaciones:{" "}
           <a href="https://x.com/blakssh" style={link}>
             @blakssh
           </a>
         </Text>
         <Text style={signOff}>
-          Best regards,
+          Saludos cordiales,
           <br />
           Lakshay
         </Text>
         <Hr style={hr} />
         <Text style={footer}>
-          You received this email because you signed up for the Notion waitlist.
-          If you believe this is a mistake, feel free to ignore this email.
+          Recibiste este correo electrónico porque te registraste en la lista de espera.
+          Si cree que esto es un error, no dude en ignorar este correo electrónico.
         </Text>
       </Container>
     </Body>
